@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://joystick/scripts/joystick.gd" type="Script" id=1]
+[ext_resource path="res://joystick/sprites/foregrounds/handle_outline.png" type="Texture" id=2]
+[ext_resource path="res://joystick/sprites/backgrounds/allaxis_outline.png" type="Texture" id=3]
+
+[node name="Joystick" type="Node2D"]
+scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 1 )
+background_texture = ExtResource( 3 )
+frontground_texture = ExtResource( 2 )
+
+[node name="Frontground" type="Sprite" parent="."]
+
+[node name="Background" type="Sprite" parent="."]
